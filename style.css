@@ -107,7 +107,7 @@ section {
     bottom: 30px;
     color: white;
     font-weight: 300;
-    font-size: 50px;
+    font-size: 150%;
     margin: 0;
 }
 
@@ -141,4 +141,60 @@ section {
 
 .social {
     width: 30px;
+}
+
+@media screen and (max-width: 859px) {
+    .hero-section {
+       margin-top: 30px;
+    }
+ 
+    .hero-container {
+       flex-direction: column;
+    }
+ 
+    .hero-wrapper-right {
+       margin-top: -30px;
+       padding-top: 50px;
+    }
+ 
+    .hero-heading {
+       font-size: 200%;
+    }
+}
+ 
+@media screen and (max-width: 579px) {
+    h2 {
+       font-size: 27px;
+    }
+ 
+    .hero-section {
+       margin-top: 15px;
+    }
+    
+    .hero-wrapper-left {
+       width: 70%;
+    }
+ 
+    .hero-heading {
+       font-size: 150%;
+    }
+ 
+    .hero-wrapper-right {
+       margin-top: -25px;
+       padding-top: 45px;
+       padding-bottom: 70px;
+       aspect-ratio: auto;
+       width: 90%;
+       align-items: center;
+    }
+ 
+    .hero-text {
+       font-size: 14px;
+       margin-top: 20px;
+    }
+ 
+    .link-wrapper {
+       right: auto;
+       bottom: 15px;
+    }
 }
