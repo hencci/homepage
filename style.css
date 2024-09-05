@@ -143,6 +143,99 @@ section {
     width: 30px;
 }
 
+
+.work-section {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: stretch;
+    margin: 30px 0px;
+    padding-bottom: 70px
+}
+
+.work-grid {
+    display: grid;
+    width: calc(100vw - 50px);
+    max-width: 1000px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    height: 350px;
+    box-shadow: 0px 3px 7px 1px rgba(0,0,0,0.3);
+}
+
+.work-picture {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.work-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    padding: 15px 20px;
+}
+
+.work-content-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.work-link {
+    width: 16px;
+    height: 16px;
+}
+
+.work-link > img {
+    width: 16px;
+    height: 16px;
+}
+
+.work-text {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.pic1 {
+    background-color: #a31b06f1;
+}
+.pic2 {
+    background-color: #067ca3d1;
+}
+.pic3 {
+    background-color: #b00ac5f1;
+}
+.pic4 {
+    background-color: #ce930af1;
+}
+.pic5 {
+    background-color: #772de6f1;
+}
+.pic6 {
+    background-color: #2da306c3;
+}
+
+
 @media screen and (max-width: 859px) {
     .hero-section {
        margin-top: 30px;
@@ -196,5 +289,9 @@ section {
     .link-wrapper {
        right: auto;
        bottom: 15px;
+    }
+
+    .work {
+        padding-bottom: 10px;
     }
 }
